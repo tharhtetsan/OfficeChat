@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:id="@+id/idmessageM"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_light" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="276dp"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/textView12"
+                android:layout_height="8dp" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/idUserNameM"
+                android:textSize="14sp"
+                android:textColor="@android:color/holo_blue_light"
+                android:textAlignment="viewEnd" />
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            app:srcCompat="@drawable/ic_profile_placeholder"
+            android:id="@+id/idGuserImage"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@android:drawable/ic_menu_myplaces"
+            android:title=" Personal Infromation " />
+
+        <item
+            android:id="@+id/idGroupChat"
+            android:icon="@android:drawable/sym_action_chat"
+            android:title="Group Chat" />
+        <item
+            android:id="@+id/idPrivateChat"
+            android:icon="@android:drawable/sym_action_email"
+            android:title="Private Chat"
+            />
+
+
+    </group>
+
+    <item android:title="Help And Setting">
+        <menu>
+            <item
+                android:id="@+id/nav_manage"
+                android:icon="@android:drawable/ic_menu_preferences"
+                android:title="Account Setting" />
+
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@android:drawable/ic_dialog_info"
+                android:title="About" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+
+            <item
+                android:id="@+id/LogOut"
+                android:icon="@android:drawable/ic_menu_close_clear_cancel"
+                android:title="Log Out" />
+
+
+        </menu>
+    </item>
+
+</menu>

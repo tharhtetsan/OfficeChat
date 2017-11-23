@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            app:srcCompat="@drawable/ic_profile_placeholder"
+            android:id="@+id/id_receiver_photo"
+            android:layout_weight="1"
+            android:layout_height="70dp"
+            android:layout_width="120dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_message_receiver"
+                android:textAlignment="textStart"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="18sp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:id="@+id/textView8"
+                android:layout_width="80dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_message_sender"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="18sp"
+                android:textAlignment="textStart"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            app:srcCompat="@drawable/ic_profile_placeholder"
+            android:id="@+id/id_sender_photo"
+            android:layout_weight="1"
+            android:layout_height="70dp"
+            android:layout_width="120dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/textView17"
+        android:layout_height="30dp" />
+
+</LinearLayout>

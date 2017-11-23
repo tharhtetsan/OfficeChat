@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_account_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ucsm.officechat.AccountSetting"
+    android:background="@drawable/g2">
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:weightSum="1">
+
+        <TextView
+            android:text="User Pesonal Info"
+            android:layout_width="match_parent"
+            android:id="@+id/idupdateUser"
+            android:layout_weight="0.44"
+            android:layout_height="30dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="24sp"
+            android:fontFamily="serif"
+            android:textStyle="normal|bold"
+            android:textAllCaps="true" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="204dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="176dp"
+                android:layout_height="257dp">
+
+                <TextView
+                    android:text="User_ID"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="18sp"
+                    android:id="@+id/idupdateID"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_dark" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/idupdateName"
+                    android:selectAllOnFocus="false"
+                    android:hint="UserName"
+                    android:layout_height="50dp"
+                    android:textColor="?android:attr/colorForeground" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:text="Gender :"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView11"
+                        android:layout_weight="0.71"
+                        android:textAlignment="viewStart"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/background_dark" />
+
+                    <TextView
+                        android:layout_width="77dp"
+                        android:id="@+id/idupdateGender"
+                        android:layout_height="40dp"
+                        android:textSize="16sp"
+                        android:layout_weight="0.41"
+                        android:textColor="@android:color/background_dark" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/idupdateLivein"
+                    android:hint="live in"
+                    android:textColor="?android:attr/colorForeground" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="186dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/textView16"
+                    android:layout_height="20dp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="147dp"
+                    android:fadeScrollbars="true">
+
+                    <ImageView
+                        app:srcCompat="@drawable/b4"
+                        android:id="@+id/idupdateImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/textView10"
+                    android:layout_height="20dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:text="Infromation for Job and Education"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView22"
+            android:layout_weight="0.16"
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_red_light" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_weight="0.39"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/idupdategmail"
+                android:hint="gmail"
+                android:textColor="?android:attr/editTextColor" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/idupdateworkat"
+                android:hint="Woat at :"
+                android:textColor="?android:attr/colorForeground" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/idupdaterank"
+                android:hint="Post/ Rank"
+                android:textColor="?android:attr/colorForeground" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/idupdateshool"
+                android:hint="Schoool"
+                android:textSize="16sp"
+                android:textColor="?android:attr/colorForeground" />
+        </LinearLayout>
+
+        <Button
+            android:text="Submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/idupdateBtn"
+            android:background="@color/colorPrimaryDark" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    card_view:cardCornerRadius="5dp"
+    android:background="@android:color/holo_blue_dark">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_height="match_parent"
+                android:id="@+id/textView17"
+                android:layout_weight="0.41"
+                android:layout_width="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/senderMsg"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:textAlignment="viewEnd" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:id="@+id/textView8"
+                android:layout_weight="0.41"
+                android:layout_width="25dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:id="@+id/textView24" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="270dp"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:layout_weight="0.74">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_height="20dp"
+                    android:layout_width="110dp" />
+
+                <TextView
+                    android:text="UserName"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/idPrivateChatUserName"
+                    android:textAlignment="textEnd"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/colorPrimaryDark" />
+            </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+
+                android:src="@drawable/ic_profile_placeholder"
+                android:id="@+id/sendImg"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
